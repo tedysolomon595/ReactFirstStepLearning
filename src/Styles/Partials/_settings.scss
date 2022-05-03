@@ -1,0 +1,52 @@
+.setting {
+    display: block;
+    margin-top: 2em;
+    h2 {
+        font-size: 1.75em;
+        color: var(--text-color);
+    }
+    .option-container {
+        box-shadow: 0 5px 10px var(--shadow-color);
+        padding: 1em;
+        border-radius: 5px;
+        background-color: var(--background-color);
+        border-left: .5em solid var(--primary-color);
+        margin-top: 1em;
+        display: flex;
+        gap: 1em;
+        .option {
+            width: 3.5em;
+            height: 3.5em;
+            box-shadow: 0 3px 6px var(--shadow-color);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.light {
+                background-color: #fff;
+            }
+            &.dark {
+                background-color: rgb(29, 29, 29);
+            }
+            .check {
+                height: 2.5em;
+                width: 2.5em;
+                border-radius: 50%;
+                background-color: var(--primary-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 2px 5px var(--shadow-color);
+                svg {
+                    height: 1.5em;
+                    width: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.btn span {
+    display: inline-block;
+    margin-left: .5em;
+}
